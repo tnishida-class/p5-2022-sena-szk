@@ -1,5 +1,6 @@
 let count;
 let cycle;
+let size;
 
 function setup(){
   createCanvas(200, 200);
@@ -8,10 +9,11 @@ function setup(){
 }
 
 function draw(){
-  background(160, 192, 255);
-  count = (count + 1) % cycle;
-  let size;
+  background(160,192,255);
+  count=(count+1)%cycle;
   size=count;
-  ellipse(width / 2, height /2,  size);
-  
+  ellipse(width/2,height/2,size);
+}
+function mousePressed(){
+  count=(count+70)%cycle;
 }
