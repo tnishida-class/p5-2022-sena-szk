@@ -23,8 +23,8 @@ function draw(){
   fill(153,61,0);
   rect(0,gy,width,gy);
   fill(0);
-  textSize(30);
-  text("push ← or → or click",50,60);
+  textSize(20);
+  text("How to open the box?",90,60);
   noStroke();
   fill(255,255,0);
   rect(140,jump/g+70,120,40);
@@ -50,6 +50,9 @@ function draw(){
 function keyPressed(){
   if(keyCode==LEFT_ARROW){x-=10;}
   else if(keyCode==RIGHT_ARROW){x+=10;}
+  else if(key==" " && y>= height-ground-size/2){ 
+    vy=-jump;     
+  }
 }
 
 function mario(x1,y1,w,h){
@@ -62,9 +65,9 @@ function chariiinn(x2,y2,r){
   ellipse(x2,y2,r); 
 }
 
-function mousePressed(){
-  if(y >= height-ground-size/2){ 
+//function keyPressed(){
+  if(key==" " && y>= height-ground-size/2){ 
     vy=-jump;     
   }
-}
+//     }
 
