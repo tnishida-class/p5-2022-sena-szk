@@ -23,8 +23,8 @@ function draw(){
   fill(153,61,0);
   rect(0,gy,width,gy);
   fill(0);
-  textSize(20);
-  text("How to open the box?",90,60);
+  textSize(32);
+  text("How to open the box?",35,60);
   noStroke();
   fill(255,255,0);
   rect(140,jump/g+70,120,40);
